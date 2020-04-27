@@ -11,7 +11,7 @@ This [website](https://crypticsquirrel.github.io/chomsky-hierarchy/) is hosted h
 Attribution 
 ---
 
-Attribution to <a href="https://bootstrapmade.com/">BootstrapMade</a> for the awesome template.
+Attribution given to <a href="https://bootstrapmade.com/">BootstrapMade</a> for the awesome template.
 
 License
 ---
