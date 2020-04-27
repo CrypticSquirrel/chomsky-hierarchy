@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+        <title>The Chomsky</title>
+        <meta content="" name="descriptison" />
+        <meta content="" name="keywords" />
+
+        <!-- Favicons -->
+        <link href="https://img.icons8.com/plasticine/200/000000/share.png" rel="icon" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            rel="stylesheet"
+        />
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+        <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+        <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+
+        <!-- =======================================================
+        * Template Name: Knight - v2.0.0
+        * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+    </head>
+
+    <body>
+        <!-- ======= Hero Section ======= -->
+        <section id="hero">
+            <div class="hero-container">
+                <a href="index.html" class="hero-logo" data-aos="zoom-in"
+                    ><img src="assets/img/chomsky.png" alt=""
+                /></a>
+                <h1 data-aos="zoom-in">Exploring Chomsky Hierarchy</h1>
+                <h2 data-aos="fade-up">CPTR 437 Final Project by Edward Breja</h2>
+                <a data-aos="fade-up" href="#regular" class="btn-get-started scrollto">Jump In!</a>
+            </div>
+        </section>
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="d-flex align-items-center">
+            <div class="container">
+                <nav class="nav-menu d-none d-lg-block">
+                    <ul class="nav-inner">
+                        <li class="active"><a href="#regular">Regular</a></li>
+                        <li><a href="#context-free-d">Deterministic Context Free</a></li>
+                        <li><a href="#context-free">Context Free</a></li>
+
+                        <li class="nav-logo">
+                            <a href="#regular"
+                                ><img
+                                    src="https://img.icons8.com/bubbles/100/000000/share.png"
+                                    class="img-fluid"
+                            /></a>
+                        </li>
+
+                        <li><a href="#context-sensitive">Context Sensitive</a></li>
+                        <li><a href="#recursive">Recursive</a></li>
+                        <li><a href="#recursive-e">Recursively enumerable</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main">
+            <!-- ======= Regular Language ======= -->
+            <section id="regular" class="featured">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Regular Language</h2>
+                        <p>
+                            A language is called a regular language if some finite automaton
+                            recognizes it
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab-1">
+                                    <figure>
+                                        <img
+                                            src="assets/img/dfa/intro.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="tab-pane" id="tab-2">
+                                    <figure>
+                                        <img
+                                            src="assets/img/dfa/finalgrammar.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                                        <h4>Finite automaton</h4>
+                                        <p>
+                                            A finite automaton (FA) is a simple idealized machine
+                                            used to recognize patterns within input taken from some
+                                            character set (or alphabet). The job of an FA is to
+                                            <i>accept</i> or <i>reject</i> an input depending on
+                                            whether the pattern defined by the FA occurs in the
+                                            input.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Formally, a finite automaton is a 5-tuple (Q, Σ, δ,
+                                            q<sub>0</sub>, F ) where
+                                        </p>
+                                        <ol>
+                                            <li><p>Q is a finite set called the states</p></li>
+                                            <li><p>Σ is a finite set called the alphabet</p></li>
+                                            <li><p>δ : Q × Σ → Q is the transition function</p></li>
+                                            <li>
+                                                <p>q<sub>0</sub> ∈ Q is the start state</p>
+                                            </li>
+                                            <li><p>F ⊆ Q is the set of accept states</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                                <li class="nav-item mt-4 mt-lg-0">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-2">
+                                        <h4>Regular grammar</h4>
+                                        <p>
+                                            The purpose of a (regular) grammar is to specify how to
+                                            form grammatically correct strings in the language the
+                                            grammar represents.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Formally, a regular grammar is a mathematical object, G,
+                                            with four components, G = (N, Σ, P, S), where
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <p>
+                                                    N is a nonempty, finite set of nonterminal
+                                                    symbols
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Σ is a finite set of terminal or alphabet
+                                                    symbols
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    P is a set of grammar rules (eg. A → aB for
+                                                    [A,B] ∈ N, a ∈ Σ)
+                                                </p>
+                                            </li>
+                                            <li><p>S ∈ N is the start symbol</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Regular Language -->
+
+            <!-- ======= Deterministic Context Free ======= -->
+            <section id="context-free-d" class="featured">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Deterministic Context Free Language</h2>
+                        <p>
+                            Deterministic context-free languages (DCFLs) are a proper subset of
+                            context-free languages
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#tab-3">
+                                        <h4>Deterministic pushdown automaton</h4>
+
+                                        <p>
+                                            Formally, a deterministic pushdown automaton is a
+                                            6-tuple (Q, Σ, Γ, δ, q<sub>0</sub>, F ), where Q, Σ, Γ,
+                                            and F are all finite sets, and
+                                        </p>
+                                        <ol>
+                                            <li><p>Q is the set of states</p></li>
+                                            <li><p>Σ is the input alphabet</p></li>
+                                            <li><p>Γ is the stack alphabet</p></li>
+                                            <li>
+                                                <p>
+                                                    δ : Q × Σε × Γε → (Q × Γε) ∪ {∅} is the
+                                                    transition function
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>q<sub>0</sub> ∈ Q is the start state</p>
+                                            </li>
+                                            <li><p>F ⊆ Q is the set of accept states</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                                <li class="nav-item mt-4 mt-lg-0">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-4">
+                                        <h4>Deterministic context-free grammar</h4>
+                                        <p>
+                                            A deterministic context-free grammar is a context-free
+                                            grammar such that every valid string has a forced
+                                            handle. For any CFG we construct an associated DFA DK
+                                            that can identify handles. DK accepts its input z if
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <p>
+                                                    z is the prefix of some valid string v = zy, and
+                                                </p>
+                                            </li>
+                                            <li><p>z ends with a handle of v.</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab-3">
+                                    <figure>
+                                        <img
+                                            src="assets/img/npda/introgrammar.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="tab-pane" id="tab-4">
+                                    <figure>
+                                        <img
+                                            src="assets/img/npda/finishedrules.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Deterministic Context Free -->
+
+            <!-- ======= Context Free Language ======= -->
+            <section id="context-free" class="featured">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Context Free Language</h2>
+                        <p>
+                            A context-free language is any language that is generated by a
+                            context-free grammar
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab-5">
+                                    <figure>
+                                        <img
+                                            src="assets/img/pda/pda.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="tab-pane" id="tab-6">
+                                    <figure>
+                                        <img
+                                            src="assets/img/pda/cfg.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#tab-5">
+                                        <h4>Pushdown automaton</h4>
+                                        <p>
+                                            A pushdown automaton (PDA) is a type of automaton that
+                                            employs a stack.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Formally, a pushdown automaton is a 6-tuple (Q, Σ, Γ, δ,
+                                            q<sub>0</sub>, F ), where Q, Σ, Γ, and F are all finite
+                                            sets, and
+                                        </p>
+                                        <ol>
+                                            <li><p>Q is the set of states</p></li>
+                                            <li><p>Σ is the input alphabet</p></li>
+                                            <li><p>Γ is the stack alphabet</p></li>
+                                            <li>
+                                                <p>
+                                                    δ : Q × Σε × Γε → P(Q × Γε) is the transition
+                                                    function
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>q<sub>0</sub> ∈ Q is the start state</p>
+                                            </li>
+                                            <li><p>F ⊆ Q is the set of accept states</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                                <li class="nav-item mt-4 mt-lg-0">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-6">
+                                        <h4>Context-free grammar</h4>
+                                        <p>
+                                            A context-free grammar (CFG) is defined as a grammar in
+                                            which every production rule is of the form 𝐴→𝛼, where 𝐴
+                                            is a variable and 𝛼 is a sequence of variables and
+                                            terminals.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Formally, a context-free grammar is a 4-tuple (V, Σ, R,
+                                            S), where
+                                        </p>
+                                        <ol>
+                                            <li><p>V is a finite set called the variables</p></li>
+                                            <li>
+                                                <p>
+                                                    Σ is a finite set, disjoint from V, called the
+                                                    terminals
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    R is a finite set of rules, with each rule being
+                                                    a variable and a string of variables and
+                                                    terminals
+                                                </p>
+                                            </li>
+                                            <li><p>S ∈ V is the start variable</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Context Free Language -->
+
+            <!-- ======= Context Sensitive ======= -->
+            <section id="context-sensitive" class="featured">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Context Sensitive Language</h2>
+                        <p>
+                            A context-sensitive language is a language that can be defined by a
+                            context-sensitive grammar
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#tab-7">
+                                        <h4>Linear bounded automaton</h4>
+                                        <p>
+                                            A linear bounded automaton (LBA) is a restricted form of
+                                            Turing machine. It is described as a multi-track
+                                            non-deterministic Turing machine with a tape of some
+                                            bounded finite length. The computation is restricted to
+                                            the constant bounded area. The input alphabet contains
+                                            two special symbols which serve as left end markers and
+                                            right end markers which mean the transitions neither
+                                            move to the left of the left end marker nor to the right
+                                            of the right end marker of the tape.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item mt-4 mt-lg-0">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-8">
+                                        <h4>Context-sensitive grammar</h4>
+                                        <p>
+                                            A Context-sensitive grammar is an unrestricted grammar
+                                            in which all the productions are of form α → β where α
+                                            and β are strings of non-terminals and terminals.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Formally, context-sensitive grammar has 4-tuples, G =
+                                            (N, Σ, P, S), where
+                                        </p>
+                                        <ol>
+                                            <li><p>N is a set of non-terminal symbols</p></li>
+                                            <li><p>Σ is a set of terminal symbols</p></li>
+                                            <li><p>P is the finite set of productions</p></li>
+                                            <ul>
+                                                <li>
+                                                    <p>
+                                                        All rules in P are of the form α1 A α2 → α1
+                                                        β α2
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <li><p>S is the start symbol of the production</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab-7">
+                                    <figure>
+                                        <img
+                                            src="assets/img/context/tm.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="tab-pane" id="tab-8">
+                                    <figure>
+                                        <img
+                                            src="assets/img/context/context-sensitive-grammar.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Context Sensitive -->
+
+            <!-- ======= Recursive Language ======= -->
+            <section id="recursive" class="featured">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Recursive Language</h2>
+                        <p>
+                            A language is recursive if there exists a Turing machine that accepts
+                            every string in the language and rejects everything else
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab-9">
+                                    <figure>
+                                        <img
+                                            src="assets/img/tm/tm.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="tab-pane" id="tab-10">
+                                    <figure>
+                                        <img
+                                            src="assets/img/tm/ug.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#tab-9">
+                                        <h4>Turing machine</h4>
+                                        <p>
+                                            A turing machine for a recursive language can't go into
+                                            an infinite loop. It has to clearly reject or accept any
+                                            string input.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Formally, Turing machine is a 7-tuple, (Q, Σ, Γ, δ,
+                                            q<sub>0</sub>, q<sub>accept</sub> q<sub>reject</sub>),
+                                            where Q, Σ, Γ are all finite sets and
+                                        </p>
+                                        <ol>
+                                            <li><p>Q is the set of states</p></li>
+                                            <li>
+                                                <p>
+                                                    Σ is the input alphabet not containing the blank
+                                                    symbol ␣
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Γ is the tape alphabet, where ␣ ∈ Γ and Σ ⊆ Γ</p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    δ: Q × Γ → Q × Γ × {L,R} is the transition
+                                                    function
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>q<sub>accept</sub> ∈ Q is the accept state</p>
+                                            </li>
+                                            <li><p>q<sub>reject</sub> ∈ Q is the reject state</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                                <li class="nav-item mt-4 mt-lg-0">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-10">
+                                        <h4>Unrestricted grammar</h4>
+                                        <p>
+                                            In unrestricted grammars, productions have form u → v
+                                            where u and v are any strings of terminals and/or
+                                            variables
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Recursive Language -->
+
+            <!-- ======= Recursive Enumerable Language ======= -->
+            <section id="recursive-e" class="featured">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Recursive Enumerable Language</h2>
+                        <p>
+                            A language is recursively enumerable if there is a Turing machine that
+                            accepts every string in the language and doesn't accept everything else
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#tab-11">
+                                        <h4>Turing machine</h4>
+                                        <p>
+                                            A turing machine for a recursive language can go into an
+                                            infinite loop. Strings that are not in the language may
+                                            be rejected or may cause the Turing machine to go into
+                                            an infinite loop.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Formally, Turing machine is a 7-tuple, (Q, Σ, Γ, δ,
+                                            q<sub>0</sub>, q<sub>accept</sub> q<sub>reject</sub>),
+                                            where Q, Σ, Γ are all finite sets and
+                                        </p>
+                                        <ol>
+                                            <li><p>Q is the set of states</p></li>
+                                            <li>
+                                                <p>
+                                                    Σ is the input alphabet not containing the blank
+                                                    symbol ␣
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Γ is the tape alphabet, where ␣ ∈ Γ and Σ ⊆ Γ</p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    δ: Q × Γ → Q × Γ × {L,R} is the transition
+                                                    function
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>q<sub>accept</sub> ∈ Q is the accept state</p>
+                                            </li>
+                                            <li><p>q<sub>reject</sub> ∈ Q is the reject state</p></li>
+                                        </ol>
+                                    </a>
+                                </li>
+                                <li class="nav-item mt-4 mt-lg-0">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-12">
+                                        <h4>Unrestricted grammar</h4>
+                                        <p>
+                                            In unrestricted grammars, productions have form u → v
+                                            where u and v are any strings of terminals and/or
+                                            variables
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab-11">
+                                    <figure>
+                                        <img
+                                            src="assets/img/tm/tm.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="tab-pane" id="tab-12">
+                                    <figure>
+                                        <img
+                                            src="assets/img/tm/ug2.png"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Recursive Enumerable Language -->
+        </main>
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="container footer-bottom clearfix">
+                <div class="credits">
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-free-bootstrap-theme/ -->
+                    Attribution to <a href="https://bootstrapmade.com/">BootstrapMade</a> for the
+                    awesome template.
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+        <script src="assets/vendor/venobox/venobox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
