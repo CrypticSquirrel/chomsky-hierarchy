@@ -5,7 +5,7 @@ This repository hosts the source code for Edward Breja's CPTR 437 final project.
 Demo
 ---
 
-This [website](https://crypticsquirrel.github.io/chomsky-hierarchy/) is hosted here in github.
+This [website](https://crypticsquirrel.github.io/chomsky-hierarchy/) is hosted here on github.
 
 
 Attribution 
